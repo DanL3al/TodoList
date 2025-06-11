@@ -1,0 +1,161 @@
+
+        body,html{
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .todolist-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn-select-div{
+            margin-bottom: 8px;
+        }
+
+        .btn-select-div button{
+            background-color: rgb(101, 103, 235);
+            border-radius: 8px;
+            
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 8px 18px 8px 18px;
+
+        }
+        
+
+        .tasks-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            background-color: rgb(241, 241, 241);
+            border-radius: 8px;
+            min-height: 200px;
+            padding: 20px 0;
+            gap: 10px;
+            width: 600px;
+            min-height: 200px;
+        }
+        .tasks-container .task{
+            width: 90%;
+            gap: 20px;
+            padding: 8px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+
+        .tasks-container .task .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tasks-container .task .checkbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            color: white;
+            background-color: rgb(209, 209, 209); 
+        }
+
+        .post-container, .update-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            visibility: hidden;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .post, .update{
+            background-color: #ecedf6;
+            border-radius: 8px;
+            width: 500px;
+            height: 300px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0;
+            z-index: 100;
+            
+        }
+
+        .post h1, .update h1{
+            color: rgb(85, 85, 85);
+            font-size: 26px;
+        }
+
+        .post input, select, .update input, select{
+            height: 30px;
+            width: 500px;
+            margin-bottom: 8px;
+        }
+
+        .post select, .update select{
+            width: 508px;
+            
+        }
+        .post p, .update p{
+            margin: 0;
+            margin-bottom: 4px;
+            color: rgb(96, 96, 97);
+            font-weight: 400;
+            font-size: 18px;
+        }
+    
+
+        .update .buttons-container{
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
+
+
+        .buttons-container{
+            margin-top: 26px;
+        }
+
+        .buttons-container {
+            color: rgb(68, 66, 66);
+        }
+
+        .buttons-container button{
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            margin-right: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .buttons-container #add-task-button, #update-task-button{
+            background-color: rgb(101, 103, 235);
+            color: white;
+        }
+
+        .buttons-container #cancel-task-button{
+            background-color: rgb(182, 181, 181);
+            color: rgb(68, 66, 66);
+        }

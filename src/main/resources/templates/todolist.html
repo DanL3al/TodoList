@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="/todolist.css">
+</head>
+<body>
+    <div class="todolist-container">
+        <h1>TODO LIST</h1>
+
+        <div class="btn-select-div">
+            <button onclick="showPostModal()" class="add-task-button">Add task</button>
+        </div>
+
+        <div class="tasks-container">
+            
+        </div>
+    </div>
+    
+
+    <!-- MODAL CONTAINER -->
+    <div class="post-container">
+        <div class="post">
+            <h1>Add Task</h1>
+            <p>Title</p>
+            <input type="text" id="task-title-input" placeholder="Enter the task name">
+            <p>Status</p>
+            <select name="" id="task-status-select">
+                <option value="false">Incomplete</option>
+                <option value="true">Complete</option>
+            </select>
+
+
+            <div class="buttons-container">
+                <button id="add-task-button" onclick="postTask(), showPostModal()">Add Task</button>
+                <button id="cancel-task-button" onclick="showPostModal()">Cancel</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- MODAL UPDATE CONTAINER-->
+    <div class="update-container">
+        <div class="update">
+            <h1>Update Task</h1>
+            <p>Title</p>
+            <input type="text" id="task-title-update-input" placeholder="Enter the task name">
+            <p>Status</p>
+            <select name="" id="task-status-update-select">
+                <option value="false">Incomplete</option>
+                <option value="true">Complete</option>
+            </select>
+
+            <div class="buttons-container">
+                <button id="update-task-button" onclick="putTask(currentTaskId), showUpdateModal()">Update Task</button>
+                <button id="cancel-task-button" onclick="showUpdateModal()">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/todolist.js"></script>
+
+</body>
+</html>
