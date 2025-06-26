@@ -35,7 +35,7 @@ A simple Todo List application with a **Java Spring Boot** backend API and a fro
 
 ---
 
-## Contact
+##  Author
 
-Created by [DanL3al]
+Made by [DanL3al](https://github.com/DanL3al)
 
